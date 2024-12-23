@@ -4,47 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кухня полей</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="hero">
-        <h1 class="hero__title">Кухня полей</h1>
-        <nav class="main-nav">
-            <button class="menu-button">Меню</button>
-            <div class="menu">
-                <a href="#about">О нас</a>
-                <a href="#partners">Наши партнеры</a>
-                <a href="#dishes">Наши блюда</a>
-                <a href="#contacts">Контакты</a>
-            </div>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="Кухня полей">
+            </a>
+            <button class="menu-toggle">
+                <span></span>
+            </button>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#farmers">Фермеры</a></li>
+                    <li><a href="#dishes">Блюда</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="about" class="section about">
-            <h2>О нас</h2>
-            <!-- Добавьте контент из макета -->
-        </section>
-        
-        <section id="partners" class="section partners">
-            <h2>Наши партнеры</h2>
-            <!-- Добавьте контент из макета -->
-        </section>
-
-        <section id="dishes" class="section dishes">
-            <h2>Наши блюда</h2>
-            <div class="dishes-grid">
-                <!-- Добавьте сетку с блюдами -->
+        <section class="hero">
+            <div class="container">
+                <h1>Кухня полей</h1>
+                <p>Мы здесь, чтобы поделиться историями о кормах, любопытстве и экспедициях, сборе урожая земли и земли в поисках устойчивости, вкуса и питания.</p>
             </div>
         </section>
 
-        <section id="contacts" class="section contacts">
-            <h2>Контакты</h2>
-            <!-- Добавьте форму контактов -->
+        <section class="dishes" id="dishes">
+            <div class="container">
+                <h2>Наши блюда</h2>
+                <div class="dishes-filter">
+                    <button class="active">Новые</button>
+                    <button>Десерты</button>
+                    <button>Завтраки</button>
+                    <button>Обеды</button>
+                    <button>Ужины</button>
+                </div>
+                <div class="dishes-grid">
+                    <!-- Карточки блюд -->
+                </div>
+            </div>
+        </section>
+
+        <section class="farmers" id="farmers">
+            <div class="container">
+                <h2>Наши партнеры</h2>
+                <p>Мы исследователи, творцы, рассказчики</p>
+                <!-- Карточки фермеров -->
+            </div>
         </section>
     </main>
 
-    <script src="./js/main.js"></script>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="/" class="logo">
+                    <img src="img/logo.svg" alt="Кухня полей">
+                </a>
+                <div class="footer-subscribe">
+                    <h3>Подпишись на рассылку</h3>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваша почта">
+                        <button type="submit">Подписаться</button>
+                    </form>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="vk">VK</a>
+                    <a href="#" class="telegram">Telegram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 кухня полей</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html> 
