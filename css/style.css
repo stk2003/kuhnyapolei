@@ -1,0 +1,70 @@
+:root {
+    --main-color: #E38B6D;
+    --text-color: #333333;
+    --bg-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.hero {
+    height: 100vh;
+    background: url('../images/hero-bg.jpg') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero__title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.menu-button {
+    padding: 1rem 2rem;
+    background: var(--main-color);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--bg-color);
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.section {
+    padding: 5rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+} 
